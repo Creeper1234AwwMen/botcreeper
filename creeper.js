@@ -53,3 +53,9 @@ message.channel.send({embed: {
   }
 }
 });
+
+const mentioned = message.mentions.users.first();
+
+let id = mentioned.id;
+let name = mentioned.username;
+let avatar = mentioned.avatarURL();
